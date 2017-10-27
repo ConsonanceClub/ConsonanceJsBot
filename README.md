@@ -18,14 +18,6 @@ These are a list of use cases that you can pick up and try to document in the bo
 5. We should be able to specify a precise numer of voters expected on a poll in order to avoid spam votes
 6. We should be able to specify a form of voting in which me might have a "for or against" vote or a vote where we can give an array of the parameters to be voted for
 
-### Undecided questions
-There are also a list of undecided questions in which the bot might want to take into consideration.
-1. During a voting period, is it only the user that starts a vote that can end it? or just anybody in the channel.
-2. should we have just one person that can start and end a poll?
-3. Should we use ES5 or ES6
-
-These can be decided on the Consonance Javascript-learn slack channel
-
 ## Contribution.
 You can contribute to this project by simply forking the repo, add your own and send a Pull request.
 
