@@ -1,0 +1,24 @@
+version: '3'
+services:
+  web:
+    build:
+     context: .
+     args:
+      PORT: ${PORT}
+    image: consonanceng_vote_bot:1.0.0
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - mongo
+    links:
+      - mongo
+    ports:
+      - "5000:${PORT}"
+    tty: true
+
+  mongo:
+    image: "mongo:latest"
+    volumes:
+      - /Users/perfect/Databases/mongo:/data/db
+    ports:
+      - "27017:27017"

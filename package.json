@@ -7,11 +7,18 @@
     "start": "node src/index.js",
     "test": "mocha tests/**/*.test.js"
   },
-  "keywords": ["bot", "slackbot", "chat", "consonance", "vote"],
+  "keywords": [
+    "bot",
+    "slackbot",
+    "chat",
+    "consonance",
+    "vote"
+  ],
   "repository": "https://github.com/ConsonanceNg/ConsonanceJsBot",
   "dependencies": {
     "beepboop-botkit": "^1.4.0",
-    "botkit": "~0.1.1"
+    "botkit": "~0.1.1",
+    "mongoose": "^4.12.4"
   },
   "devDependencies": {
     "chai": "^4.1.2",
