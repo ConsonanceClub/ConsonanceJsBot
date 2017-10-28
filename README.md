@@ -1,14 +1,26 @@
 # ConsonanceJsBot
-creating a more secure and efficient voting system with a bot using Javascript. This project aims to widen and test our knowledge of Javascript, How to create and manage Bots and most importantly how to work with open source projecs. We should try to properly document any additions we are making and try to write the code in the most simple and straight forward way possible.
+Creating a more secure and efficient voting system with a bot using Javascript.
+This project aims to widen and test our knowledge of Javascript, How to create and manage Bots and most importantly how to work with open source projects.
+We should try to properly document any additions we are making and try to write the code in the most simple and straight forward way possible.
 
 
-### Stack used
+## Stack used
 The stack we are using is Botkit bots framework.
-The docs can be found at thier official [Github repo](https://github.com/howdyai/botkit "Botkit for slack")
+The docs can be found at their official [Github repo](https://github.com/howdyai/botkit "Botkit for slack")
 And this is also a quick [tutorial](http://altitudelabs.com/blog/create-a-slackbot-using-botkit/) on how to use Botkit to make and manage slackbots
 
+## Local Setup
+To setup this project locally, there are two options:
+1. Use Docker (Recommended): A Dockerfile is included in the repository that builds an image for the application. 
+Also a docker-compose.yml file has been included which builds the application image and setups all the dependencies required for testing.
+ So All you have to do is `docker-compose up` and the bot will be up and running.
+2. Install all dependencies: You would need to install nodejs and mongodb locally in your environment. The run `npm start` to start the application.
 
-### How it should work
+NOTE: Before running each of the steps, ensure all the required environment variables are set. Look inside `.env.sample` for a list of all required environment variable. 
+If you are using docker, you just need to make a copy of `.env.sample` and name it `.env` before running docker compose.
+
+
+## How it should work
 Basically, this is a slack bot. There should be a form of interaction between the user and the bot.
 These are a list of use cases that you can pick up and try to document in the bot.
 1. As a user, one should be able to ask the bot to start a vote (or poll) and specify voting duration.
